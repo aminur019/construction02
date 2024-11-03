@@ -14,6 +14,32 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/fonts.css">
+
+
+<script>
+        // Disable right-click context menu
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+
+        // Disable certain keyboard shortcuts
+        document.addEventListener('keydown', function(e) {
+            // Prevent Ctrl+S, Ctrl+U, Ctrl+C
+            if (e.ctrlKey && (e.key === 's' || e.key === 'u' || e.key === 'c')) {
+                e.preventDefault();
+            }
+        });
+    </script>
+
+
+
+
+
+
+
+
+
+	
     <style>
         .ie-panel {
             display: none;
